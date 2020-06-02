@@ -1,11 +1,13 @@
-import { createElement } from 'react';
+import { useState, createElement } from 'react';
 
 var SampleComponent = function (props) {
     var text = props.text;
+    var value = useState('abc')[0];
     return createElement("div", { style: { backgroundColor: 'black', color: "white" } },
-        "Hello ",
-        text);
+        "32 ",
+        text,
+        " ",
+        value);
 };
 
 export default SampleComponent;
-//# sourceMappingURL=index.es.js.map

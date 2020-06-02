@@ -6,9 +6,12 @@ var React = require('react');
 
 var SampleComponent = function (props) {
     var text = props.text;
+    var value = React.useState('abc')[0];
     return React.createElement("div", { style: { backgroundColor: 'black', color: "white" } },
         "Hello ",
-        text);
+        text,
+        " ",
+        value);
 };
 
 exports.default = SampleComponent;

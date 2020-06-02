@@ -6,7 +6,8 @@ interface IProps {
 
 const SampleComponent = (props: IProps) => {
   const { text } = props;
-  return <div style={{ backgroundColor: 'black', color: "white" }}>Hello {text}</div>
+  const [ value ] = React.useState('abc');
+  return <div style={{ backgroundColor: 'black', color: "white" }}>32 {text} {value}</div>
 }
 
 export default SampleComponent;
